@@ -29,5 +29,20 @@ def total_money(people):
         total_money += cash
     return total_money
 
-def lend_money
+def lend_money(person1, person2, loan):
+    person1["monies"] -= loan
+    person2["monies"] += loan
 
+def all_favourite_foods(people):
+    favourite_foods = []
+    for person in people:
+        foods = person["favourites"]["snacks"]
+        favourite_foods += foods
+    return favourite_foods
+
+def find_no_friends(people):
+    no_friend = []
+    for person in people:
+        if len(person["friends"])==0:
+            no_friend+=[person]
+    return no_friend
