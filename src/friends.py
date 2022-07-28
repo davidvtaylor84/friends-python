@@ -46,3 +46,32 @@ def find_no_friends(people):
         if len(person["friends"])==0:
             no_friend+=[person]
     return no_friend
+
+# create master list
+# loop through people and add fave show
+# def favourite_tv_inc_duplicates(people):
+#     favourite_shows = []
+#     for person in people:
+#         favourite_shows += person["favourites"]["tv_show"]
+
+def unique_favourite_tv_shows(people):
+    nonunique_list=[]
+    unique_list=[]
+    for person in people:
+        show = person["favourites"]["tv_show"]
+        nonunique_list += show
+    in_list = False
+    for list_show in nonunique_list:
+        if show == list_show:
+            in_list = True
+    if in_list == False:
+        unique_list += show
+    return unique_list
+
+            
+    
+
+            
+
+    
+

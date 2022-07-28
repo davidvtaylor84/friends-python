@@ -137,7 +137,6 @@ class TestFriends(unittest.TestCase):
 
   # 10. Find the set of everyone's favourite tv shows joined together, with no duplicates
     # (hint: return a list of all favourite tv shows that only appear once)
-  @unittest.skip("delete this line to run the test")
   def test_unique_favourite_tv_shows(self):
     result = unique_favourite_tv_shows(self.people)
     expected = ["Friends", "Baywatch", "Pokemon", "X-Files"]
